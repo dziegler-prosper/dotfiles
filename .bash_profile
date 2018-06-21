@@ -63,7 +63,7 @@ fi
 source ~/.git-prompt.sh
 
 #rbenv
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 #java
 export JAVA_HOME=$(/usr/libexec/java_home)

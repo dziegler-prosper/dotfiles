@@ -9,34 +9,23 @@ alias ll="ls -l"
 alias llm="ls -l --block-size=MB"
 
 # Shortcuts
-alias d="cd ~/Dropbox"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias dev="cd ~/Developer"
-alias pspr="cd ~/Developer/prosper"
-#alias p="cd ~/projects"
+alias repos="cd ~/Documents/repos"
 alias g="git"
 alias h="history"
-alias j="jobs"
 alias v="vim"
 alias s="subl ."
 alias o="open"
 alias oo="open ."
 
 # Git 
-alias gitconfig-prosper="git config user.email gpanneerselvam@prosper.com; git config user.name Govind;"
-alias gitconfig-personal="git config user.email imgovind@live.com; git config user.name Govind;"
+alias gitconfig="git config user.email dziegler@prosper.com; git config user.name David Ziegler;"
 alias gitlog="git log --oneline --graph --decorate -10"
 
 # SSH
-alias ssh-hulk="ssh -i ~/svc-bi-direct-mail-prod.pem centos@10.226.30.190"
-alias ssh-hmas="ssh -i ~/svc-bi-direct-mail-prod.pem ec2-user@10.226.29.63"
-alias ssh-devt="ssh devtools01.prod.lvd1.pspr.co"
-alias ssh-risk="ssh -i ~/svc-bi-direct-mail-prod.pem ec2-user@10.226.16.188"
-
-# SCP
-#alias scp-hulktolocal="scp -i ~/svc-bi-direct-mail-prod.pem centos@10.226.30.190:"
-#alias scp-hmastolocal="scp -i ~/svc-bi-direct-mail-prod.pem ec2-user@10.226.29.63:"
+alias ssh-devtools="ssh devtools01.prod.lvd1.pspr.co"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
