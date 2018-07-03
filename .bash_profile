@@ -66,14 +66,14 @@ source ~/.git-prompt.sh
 # eval "$(rbenv init -)"
 
 #java
-export JAVA_HOME=$(/usr/libexec/java_home)
-launchctl setenv JAVA_HOME $(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+launchctl setenv JAVA_HOME $(/usr/libexec/java_home -v 1.8)
 export PATH="$JAVA_HOME:$PATH";
 export PATH="$JAVA_HOME/bin:$PATH";
 
 #gradle
-export GRADLE_HOME=/usr/local/opt/gradle/libexec
-launchctl setenv GRADLE_HOME /usr/local/opt/gradle/libexec
+export GRADLE_HOME=~/Documents/software/gradle/gradle-3.5.1
+launchctl setenv GRADLE_HOME ~/Documents/software/gradle/gradle-3.5.1
 export PATH="$GRADLE_HOME:$PATH";
 export PATH="$GRADLE_HOME/bin:$PATH";
 
